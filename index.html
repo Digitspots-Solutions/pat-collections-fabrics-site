@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pat Collections Fabrics - Where Fabric Meets Fashion Excellence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Karla:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #101010;
+            --color-accent: #b3b1b1;
+            --color-bg: #FEFEFE;
+            --color-text: #0A0A0A;
+            --color-surface: #f0f0f0;
+            --color-secondary-accent: #6b6b6b;
+            --font-display: 'Instrument Serif', serif;
+            --font-body: 'Karla', sans-serif;
+            --border-radius: 6px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            line-height: 1.7;
+            font-weight: 400;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(254, 254, 254, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--color-surface);
+            animation: fadeUp 0.6s ease forwards;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-style: italic;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-weight: 400;
+            font-size: 0.95rem;
+            letter-spacing: 0.3px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-secondary-accent);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+            z-index: 1001;
+        }
+
+        .mobile-menu-btn span {
+            width: 25px;
+            height: 3px;
+            background: var(--color-text);
+            transition: all 0.3s ease;
+            transform-origin: center;
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 70px;
+            right: -100%;
+            width: 300px;
+            height: calc(100vh - 70px);
+            background: var(--color-bg);
+            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            transition: right 0.3s ease;
+            z-index: 999;
+            padding: 2rem;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+        }
+
+        .mobile-menu ul li {
+            margin-bottom: 1.5rem;
+        }
+
+        .mobile-menu ul a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            display: block;
+            padding: 0.5rem 0;
+        }
+
+        .mobile-menu ul a:hover {
+            color: var(--color-primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+            animation: fadeUp 0.6s ease forwards;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            padding: 0 2rem;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+            letter-spacing: -1px;
+        }
+
+        .hero .tagline {
+            font-size: 1.5rem;
+            font-family: var(--font-display);
+            margin-bottom: 1rem;
+            font-style: italic;
+            color: var(--color-accent);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+            font-weight: 300;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: var(--color-bg);
+            color: var(--color-primary);
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 500;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .cta-button:hover {
+            background: var(--color-primary);
+            color: var(--color-bg);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 2rem;
+        }
+
+        .section-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        #about {
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.1s;
+        }
+
+        #services {
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.2s;
+        }
+
+        #contact {
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.3s;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 600px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-text h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-primary);
+            font-style: italic;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        /* Services Section */
+        .services-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .services-header h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+            font-style: italic;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .service-card {
+            background: var(--color-surface);
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 0;
+            background: var(--color-primary);
+            transition: height 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+        }
+
+        .service-card:hover::before {
+            height: 100%;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+            font-style: italic;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--color-secondary-accent);
+            font-weight: 300;
+        }
+
+        /* Contact Section */
+        .contact-content {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .contact-content h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-primary);
+            font-style: italic;
+        }
+
+        .contact-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+        .contact-info {
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            font-size: 1.1rem;
+        }
+
+        .contact-item strong {
+            font-weight: 500;
+            color: var(--color-primary);
+        }
+
+        .contact-item a {
+            color: var(--color-text);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: var(--color-secondary-accent);
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--color-primary);
+            color: var(--color-bg);
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .contact-btn:hover {
+            background: var(--color-secondary-accent);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+
+        .contact-btn.whatsapp {
+            background: #25D366;
+        }
+
+        .contact-btn.whatsapp:hover {
+            background: #20BA5A;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+            z-index: 999;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 24px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-float svg {
+            width: 32px;
+            height: 32px;
+            fill: white;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--color-primary);
+            color: var(--color-bg);
+            text-align: center;
+            padding: 2.5rem 2rem;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.4s;
+        }
+
+        footer p {
+            font-size: 0.95rem;
+            font-weight: 300;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .about-content {
+                gap: 3rem;
+            }
+
+            .about-text h2,
+            .services-header h2,
+            .contact-content h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            section {
+                padding: 48px 1.5rem;
+            }
+
+            .hero {
+                height: 100vh;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .tagline {
+                font-size: 1.2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-image {
+                height: 400px;
+            }
+
+            .about-text h2,
+            .services-header h2,
+            .contact-content h2 {
+                font-size: 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .whatsapp-float svg {
+                width: 28px;
+                height: 28px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .tagline {
+                font-size: 1.1rem;
+            }
+
+            .about-text h2,
+            .services-header h2,
+            .contact-content h2 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#hero" class="logo">Pat Collections</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <img src="https://images.pexels.com/photos/32258508/pexels-photo-32258508.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Pat Collections Fabrics">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome to Pat Collections Fabrics</h1>
+            <p class="tagline">Where Fabric Meets Fashion Excellence</p>
+            <p>Your Premier Destination for Quality Fabrics and Creative Fashion Design in Ijebu Ode</p>
+            <p>From exquisite traditional fabrics to modern fashion materials, we bring your style vision to life with premium quality and expert craftsmanship. Whether you're looking for that perfect ankara, lace, or bespoke design services, Pat Collections is your trusted partner in fashion excellence.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/28988327/pexels-photo-28988327.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="About Pat Collections Fabrics">
+                </div>
+                <div class="about-text">
+                    <h2>Your Trusted Fabric and Fashion Partner in Ijebu Ode</h2>
+                    <p>At Pat Collections Fabrics, we are passionate about helping you express yourself through quality fabrics and exceptional fashion design. Located in the heart of Ijebu Ode, we have built our reputation on providing premium fabrics, creative design services, and personalized customer care that makes every client feel special.</p>
+                    <p>We understand that fashion is personal, which is why we take the time to understand your unique style, occasion, and preferences. Whether you're preparing for a wedding, corporate event, traditional ceremony, or simply updating your wardrobe, our extensive collection and expert design team are here to bring your vision to life.</p>
+                    <p>Our commitment goes beyond just selling fabrics – we're your partners in creating memorable fashion statements that reflect your personality and celebrate Nigerian culture.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="section-container">
+            <div class="services-header">
+                <h2>Premium Fabrics & Creative Design Solutions</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Fabric Collection</h3>
+                    <p>Explore our extensive range of quality fabrics including premium ankara, Swiss lace, French lace, aso-oke, adire, senator materials, and more. We source the finest fabrics to ensure your outfit stands out at any occasion.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Custom Fashion Design</h3>
+                    <p>Our creative design team specializes in bringing your fashion ideas to life. From traditional Nigerian attires (iro and buba, agbada, kaftan) to contemporary styles, we create bespoke pieces tailored perfectly to your measurements and preferences.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Bridal & Event Fashion</h3>
+                    <p>Make your special day unforgettable with our bridal and event fashion services. We provide complete outfit solutions for weddings, naming ceremonies, birthdays, and all traditional celebrations.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Fashion Consultation</h3>
+                    <p>Not sure what style suits you best? Our fashion experts provide personalized consultations to help you choose the perfect fabrics, colors, and designs that complement your body type and occasion.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Alterations & Adjustments</h3>
+                    <p>We offer professional alteration services to ensure every garment fits you perfectly. From minor adjustments to major modifications, we handle your clothes with expert care.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-container">
+            <div class="contact-content">
+                <h2>Ready to Transform Your Style?</h2>
+                <p>Visit Pat Collections Fabrics today and discover why we're Ijebu Ode's preferred choice for quality fabrics and creative fashion design. Our friendly team is ready to help you find exactly what you need.</p>
+                <p>Whether you want to browse our fabric collection, discuss a custom design project, or simply get expert fashion advice, we're here for you.</p>
+                <p>Call or WhatsApp us now to book a consultation or visit our store at your convenience. We look forward to being part of your fashion journey!</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>Location:</strong> 10, Odua College Road, Imoru off Ondo Road, Ijebu Ode, Ogun State, Nigeria
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone:</strong> <a href="tel:+2347019109167">+234 701 910 9167</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Email:</strong> <a href="mailto:info@patcollectionsfabrics.com">info@patcollectionsfabrics.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Hours:</strong> Monday - Saturday: 9:00 AM - 6:00 PM
+                    </div>
+                </div>
+
+                <div class="contact-buttons">
+                    <a href="tel:+2347019109167" class="contact-btn">Call Us</a>
+                    <a href="mailto:info@patcollectionsfabrics.com" class="contact-btn">Email Us</a>
+                    <a href="https://wa.me/2347019109167" target="_blank" class="contact-btn whatsapp">WhatsApp Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/2347019109167" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 8.162-2.135c2.355 1.316 5.013 2.135 7.838 2.135 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.217c-2.529 0-5.021-0.727-7.188-2.096l-0.516-0.303-5.334 1.395 1.417-5.281-0.335-0.534c-1.479-2.346-2.261-5.061-2.261-7.858 0-8.145 6.628-14.773 14.773-14.773s14.773 6.628 14.773 14.773-6.628 14.773-14.773 14.773zM21.766 18.482c-0.238-0.119-1.407-0.695-1.626-0.774-0.219-0.079-0.378-0.119-0.537 0.119s-0.617 0.774-0.756 0.933c-0.139 0.159-0.278 0.179-0.516 0.060s-1.006-0.371-1.915-1.182c-0.708-0.632-1.185-1.413-1.324-1.651s-0.015-0.366 0.105-0.485c0.107-0.107 0.238-0.278 0.357-0.417s0.159-0.238 0.238-0.397c0.079-0.159 0.040-0.298-0.020-0.417s-0.537-1.293-0.736-1.771c-0.194-0.464-0.391-0.401-0.537-0.408-0.139-0.007-0.298-0.008-0.457-0.008s-0.417 0.060-0.636 0.298c-0.219 0.238-0.835 0.815-0.835 1.989s0.855 2.307 0.974 2.466c0.119 0.159 1.68 2.565 4.069 3.597 0.568 0.246 1.012 0.392 1.357 0.502 0.571 0.181 1.090 0.155 1.501 0.094 0.458-0.068 1.407-0.575 1.606-1.131s0.199-1.032 0.139-1.131c-0.060-0.099-0.219-0.159-0.457-0.278z"/>
+        </svg>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="section-container">
+            <p>&copy; 2025 Pat Collections Fabrics. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenuBtn.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuBtn.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                });
+            });
+        }
+    </script>
+</body>
+</html>

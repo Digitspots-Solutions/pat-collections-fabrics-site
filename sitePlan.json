@@ -1,0 +1,42 @@
+{
+  "businessName": "Pat Collections Fabrics",
+  "industry": "Fashion and Creative Design",
+  "tone": "warm, stylish, creative",
+  "tagline": "Where Fabric Meets Fashion Excellence",
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "copy": "Welcome to Pat Collections Fabrics\n\nYour Premier Destination for Quality Fabrics and Creative Fashion Design in Ijebu Ode\n\nFrom exquisite traditional fabrics to modern fashion materials, we bring your style vision to life with premium quality and expert craftsmanship. Whether you're looking for that perfect ankara, lace, or bespoke design services, Pat Collections is your trusted partner in fashion excellence.",
+      "imagePrompt": "Photorealistic image of a vibrant Nigerian fabric store interior with colorful African print fabrics (ankara, adire, aso-oke) beautifully displayed on shelves and mannequins wearing elegant traditional Nigerian attire, warm lighting, professional retail space in Ijebu Ode setting, rich textures of silk, lace and cotton materials artfully arranged",
+      "layout": "centered"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "copy": "Your Trusted Fabric and Fashion Partner in Ijebu Ode\n\nAt Pat Collections Fabrics, we are passionate about helping you express yourself through quality fabrics and exceptional fashion design. Located in the heart of Ijebu Ode, we have built our reputation on providing premium fabrics, creative design services, and personalized customer care that makes every client feel special.\n\nWe understand that fashion is personal, which is why we take the time to understand your unique style, occasion, and preferences. Whether you're preparing for a wedding, corporate event, traditional ceremony, or simply updating your wardrobe, our extensive collection and expert design team are here to bring your vision to life.\n\nOur commitment goes beyond just selling fabrics – we're your partners in creating memorable fashion statements that reflect your personality and celebrate Nigerian culture.",
+      "imagePrompt": "Photorealistic image of an elegant Nigerian fashion designer's workspace with fabric swatches, measuring tapes, sketches, and a modern sewing machine, natural lighting streaming through windows, professional and creative atmosphere, traditional and modern fabrics harmoniously displayed, Ijebu Ode cultural elements subtly incorporated",
+      "layout": "split"
+    },
+    {
+      "id": "services",
+      "name": "Our Services",
+      "copy": "Premium Fabrics & Creative Design Solutions\n\nFabric Collection\nExplore our extensive range of quality fabrics including premium ankara, Swiss lace, French lace, aso-oke, adire, senator materials, and more. We source the finest fabrics to ensure your outfit stands out at any occasion.\n\nCustom Fashion Design\nOur creative design team specializes in bringing your fashion ideas to life. From traditional Nigerian attires (iro and buba, agbada, kaftan) to contemporary styles, we create bespoke pieces tailored perfectly to your measurements and preferences.\n\nBridal & Event Fashion\nMake your special day unforgettable with our bridal and event fashion services. We provide complete outfit solutions for weddings, naming ceremonies, birthdays, and all traditional celebrations.\n\nFashion Consultation\nNot sure what style suits you best? Our fashion experts provide personalized consultations to help you choose the perfect fabrics, colors, and designs that complement your body type and occasion.\n\nAlterations & Adjustments\nWe offer professional alteration services to ensure every garment fits you perfectly. From minor adjustments to major modifications, we handle your clothes with expert care.",
+      "imagePrompt": "Photorealistic image showing a beautiful collage of Nigerian fashion services - bolts of colorful fabrics, a tailor taking measurements, elegant traditional Nigerian wedding attire on display, fashion design sketches, and happy customers being fitted, professional fashion house atmosphere in Ijebu Ode, warm and inviting environment",
+      "layout": "cards"
+    },
+    {
+      "id": "contact",
+      "name": "Visit Us Today",
+      "copy": "Ready to Transform Your Style?\n\nVisit Pat Collections Fabrics today and discover why we're Ijebu Ode's preferred choice for quality fabrics and creative fashion design. Our friendly team is ready to help you find exactly what you need.\n\nWhether you want to browse our fabric collection, discuss a custom design project, or simply get expert fashion advice, we're here for you.\n\nCall or WhatsApp us now to book a consultation or visit our store at your convenience. We look forward to being part of your fashion journey!\n\nLocation: 10, Odua College Road, Imoru off Ondo Road, Ijebu Ode, Ogun State, Nigeria\n\nOpen Monday - Saturday: 9:00 AM - 6:00 PM",
+      "imagePrompt": "Photorealistic image of a welcoming Nigerian fabric store storefront in Ijebu Ode with 'Pat Collections Fabrics' signage, inviting entrance with colorful fabric displays visible through windows, customers entering the store, clean professional exterior, Odua College Road setting, warm afternoon lighting, friendly atmosphere",
+      "layout": "centered"
+    }
+  ],
+  "contact": {
+    "phone": "+234 701 910 9167",
+    "email": "info@patcollectionsfabrics.com",
+    "address": "10, Odua College Road, Imoru off Ondo Road, Ijebu Ode, Ogun State, Nigeria",
+    "whatsapp": "https://wa.me/2347019109167"
+  }
+}

@@ -1,42 +1,56 @@
 {
-  "businessName": "Pat Collections Fabrics",
-  "industry": "Fashion and Creative Design",
-  "tone": "warm, stylish, creative",
-  "tagline": "Where Fabric Meets Fashion Excellence",
+  "businessName": "EduUess Lending Tech Limited",
+  "industry": "Financial Technology (Fintech)",
+  "tone": "professional, trustworthy, modern",
+  "tagline": "Empowering Nigeria's Future Through Smart Credit Solutions",
   "sections": [
     {
       "id": "hero",
-      "name": "Hero",
-      "copy": "Welcome to Pat Collections Fabrics\n\nYour Premier Destination for Quality Fabrics and Creative Fashion Design in Ijebu Ode\n\nFrom exquisite traditional fabrics to modern fashion materials, we bring your style vision to life with premium quality and expert craftsmanship. Whether you're looking for that perfect ankara, lace, or bespoke design services, Pat Collections is your trusted partner in fashion excellence.",
-      "imagePrompt": "Photorealistic image of a vibrant Nigerian fabric store interior with colorful African print fabrics (ankara, adire, aso-oke) beautifully displayed on shelves and mannequins wearing elegant traditional Nigerian attire, warm lighting, professional retail space in Ijebu Ode setting, rich textures of silk, lace and cotton materials artfully arranged",
+      "name": "Hero Section",
+      "copy": "# EduUess Lending Tech Limited\n## Empowering Nigeria's Future Through Smart Credit Solutions\n\nAccess fast, reliable credit facilities powered by open banking technology. We're revolutionizing financial inclusion across Nigeria, making quality education and business growth accessible to everyone.\n\n[Get Started Today] [Learn More]",
+      "imagePrompt": "Modern Nigerian fintech office with young professional using smartphone for digital banking, bright natural lighting, Lagos skyline visible through glass windows, contemporary blue and white color scheme, photorealistic 4K quality",
       "layout": "centered"
     },
     {
       "id": "about",
       "name": "About Us",
-      "copy": "Your Trusted Fabric and Fashion Partner in Ijebu Ode\n\nAt Pat Collections Fabrics, we are passionate about helping you express yourself through quality fabrics and exceptional fashion design. Located in the heart of Ijebu Ode, we have built our reputation on providing premium fabrics, creative design services, and personalized customer care that makes every client feel special.\n\nWe understand that fashion is personal, which is why we take the time to understand your unique style, occasion, and preferences. Whether you're preparing for a wedding, corporate event, traditional ceremony, or simply updating your wardrobe, our extensive collection and expert design team are here to bring your vision to life.\n\nOur commitment goes beyond just selling fabrics – we're your partners in creating memorable fashion statements that reflect your personality and celebrate Nigerian culture.",
-      "imagePrompt": "Photorealistic image of an elegant Nigerian fashion designer's workspace with fabric swatches, measuring tapes, sketches, and a modern sewing machine, natural lighting streaming through windows, professional and creative atmosphere, traditional and modern fabrics harmoniously displayed, Ijebu Ode cultural elements subtly incorporated",
+      "copy": "## Who We Are\n\nEduUess Lending Tech Limited is a leading Nigerian fintech company specializing in innovative credit solutions. Operating from our base in Ijebu Ode, Ogun State, we leverage cutting-edge open banking technology to provide accessible, transparent, and efficient lending services to individuals and businesses across Nigeria.\n\nOur platform combines the power of data-driven insights with a deep understanding of the Nigerian financial landscape to deliver credit solutions that truly meet the needs of our customers. Whether you're seeking educational financing, business capital, or personal credit facilities, EduUess is your trusted partner in financial empowerment.\n\n### Our Mission\nTo democratize access to credit in Nigeria by leveraging technology and open banking solutions that put customers first.\n\n### Our Vision\nTo become Nigeria's most trusted and innovative lending platform, fostering financial inclusion and economic growth across all sectors.",
+      "imagePrompt": "Professional Nigerian business team in modern office setting, diverse group collaborating around digital screens showing financial data, warm professional lighting, Ijebu Ode business district atmosphere, corporate yet approachable feel, photorealistic",
       "layout": "split"
     },
     {
       "id": "services",
       "name": "Our Services",
-      "copy": "Premium Fabrics & Creative Design Solutions\n\nFabric Collection\nExplore our extensive range of quality fabrics including premium ankara, Swiss lace, French lace, aso-oke, adire, senator materials, and more. We source the finest fabrics to ensure your outfit stands out at any occasion.\n\nCustom Fashion Design\nOur creative design team specializes in bringing your fashion ideas to life. From traditional Nigerian attires (iro and buba, agbada, kaftan) to contemporary styles, we create bespoke pieces tailored perfectly to your measurements and preferences.\n\nBridal & Event Fashion\nMake your special day unforgettable with our bridal and event fashion services. We provide complete outfit solutions for weddings, naming ceremonies, birthdays, and all traditional celebrations.\n\nFashion Consultation\nNot sure what style suits you best? Our fashion experts provide personalized consultations to help you choose the perfect fabrics, colors, and designs that complement your body type and occasion.\n\nAlterations & Adjustments\nWe offer professional alteration services to ensure every garment fits you perfectly. From minor adjustments to major modifications, we handle your clothes with expert care.",
-      "imagePrompt": "Photorealistic image showing a beautiful collage of Nigerian fashion services - bolts of colorful fabrics, a tailor taking measurements, elegant traditional Nigerian wedding attire on display, fashion design sketches, and happy customers being fitted, professional fashion house atmosphere in Ijebu Ode, warm and inviting environment",
-      "layout": "cards"
+      "copy": "## Credit Solutions Tailored for You\n\n### Educational Loans\nFund your academic dreams with our flexible education financing options. From tuition fees to learning materials, we support Nigerian students and professionals pursuing knowledge.\n\n### Business Credit Facilities\nScale your business with working capital loans designed for Nigerian SMEs. Fast approval, competitive rates, and flexible repayment terms that work with your cash flow.\n\n### Personal Loans\nLife happens. Our personal credit solutions provide quick access to funds when you need them most, with transparent terms and no hidden charges.\n\n### Open Banking Integration\nSeamlessly connect your bank accounts for instant credit assessment and faster approval. Secure, reliable, and built on cutting-edge fintech infrastructure.\n\n### Credit Advisory Services\nGet expert guidance on credit management, financial planning, and building a strong credit profile for future opportunities.",
+      "imagePrompt": "Split-screen composition showing Nigerian students with laptops, small business owner in shop with POS terminal, and smartphone displaying modern banking app interface, vibrant colors, professional photography style, representing diverse financial services",
+      "layout": "grid"
+    },
+    {
+      "id": "team",
+      "name": "Leadership",
+      "copy": "## Meet Our Leadership\n\n### Open Banking Product Lead\nOur leadership team brings extensive experience in fintech, open banking, and the Nigerian financial services sector. With deep expertise in product development and a customer-first approach, we're building credit solutions that truly understand and serve the Nigerian market.\n\nOur product leadership ensures that every feature, every process, and every customer interaction reflects our commitment to innovation, security, and financial empowerment.",
+      "imagePrompt": "Professional Nigerian fintech executive in modern office, confident posture, business casual attire, digital financial charts and screens in background, natural window lighting, Lagos professional environment, high-quality corporate portrait style",
+      "layout": "centered"
+    },
+    {
+      "id": "faq",
+      "name": "Frequently Asked Questions",
+      "copy": "## Frequently Asked Questions\n\n**What is open banking and how does it benefit me?**\nOpen banking allows secure sharing of your financial data with your consent, enabling us to provide faster credit decisions, better rates, and personalized loan offers based on your actual financial behavior.\n\n**How quickly can I get approved?**\nWith our open banking integration, credit decisions can be made within minutes to hours, depending on the loan type and amount.\n\n**What are your interest rates?**\nOur rates are competitive and personalized based on your credit profile. Contact us for a customized quote tailored to your needs.\n\n**Do I need collateral?**\nMany of our credit products are designed to work without traditional collateral, leveraging your financial data and credit history instead.\n\n**Is my data secure?**\nAbsolutely. We employ bank-level encryption and comply with all Nigerian data protection regulations. Your financial information is always secure and confidential.\n\n**What areas do you serve?**\nWhile we're based in Ijebu Ode, our digital platform serves customers across Nigeria. All you need is a smartphone or computer and internet access.\n\n**How do I apply?**\nVisit eduuess.com or contact us directly via phone or WhatsApp. Our team will guide you through the simple application process.",
+      "imagePrompt": "Clean, modern FAQ interface displayed on smartphone and laptop screens, Nigerian office background, friendly customer service representative visible, professional yet approachable atmosphere, bright natural lighting, high-quality product photography",
+      "layout": "default"
     },
     {
       "id": "contact",
-      "name": "Visit Us Today",
-      "copy": "Ready to Transform Your Style?\n\nVisit Pat Collections Fabrics today and discover why we're Ijebu Ode's preferred choice for quality fabrics and creative fashion design. Our friendly team is ready to help you find exactly what you need.\n\nWhether you want to browse our fabric collection, discuss a custom design project, or simply get expert fashion advice, we're here for you.\n\nCall or WhatsApp us now to book a consultation or visit our store at your convenience. We look forward to being part of your fashion journey!\n\nLocation: 10, Odua College Road, Imoru off Ondo Road, Ijebu Ode, Ogun State, Nigeria\n\nOpen Monday - Saturday: 9:00 AM - 6:00 PM",
-      "imagePrompt": "Photorealistic image of a welcoming Nigerian fabric store storefront in Ijebu Ode with 'Pat Collections Fabrics' signage, inviting entrance with colorful fabric displays visible through windows, customers entering the store, clean professional exterior, Odua College Road setting, warm afternoon lighting, friendly atmosphere",
-      "layout": "centered"
+      "name": "Contact Us",
+      "copy": "## Get In Touch\n\nReady to take the next step in your financial journey? Our team at EduUess Lending Tech Limited is here to help.\n\n### Visit Our Office\n10, Odua College Road, Imoru\nOff Ondo Road, Ijebu Ode\nOgun State, Nigeria\n\n### Call or Message Us\nPhone: 07019109167\nWhatsApp: Available for instant support\n\n### Business Hours\nMonday - Friday: 8:00 AM - 5:00 PM\nSaturday: 9:00 AM - 2:00 PM\n\nWhether you have questions about our services, need help with an application, or want to discuss custom credit solutions for your business, we're just a call or message away.\n\n[Send WhatsApp Message] [Call Now] [Email Us]",
+      "imagePrompt": "Modern Nigerian fintech office exterior in Ijebu Ode, welcoming entrance with company signage, professional building facade, tropical Nigerian vegetation, clear blue sky, daytime photography, inviting business atmosphere, photorealistic quality",
+      "layout": "split"
     }
   ],
   "contact": {
-    "phone": "+234 701 910 9167",
-    "email": "info@patcollectionsfabrics.com",
-    "address": "10, Odua College Road, Imoru off Ondo Road, Ijebu Ode, Ogun State, Nigeria",
+    "phone": "07019109167",
+    "email": "info@eduuess.com",
+    "address": "10, Odua College Road, Imoru, Off Ondo Road, Ijebu Ode, Ogun State, Nigeria",
     "whatsapp": "https://wa.me/2347019109167"
   }
 }
